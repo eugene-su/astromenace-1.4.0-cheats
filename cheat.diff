@@ -1,0 +1,532 @@
+diff --git a/src/menu/menu_workshop_shipyard.cpp b/src/menu/menu_workshop_shipyard.cpp
+index 7214710..dcd8ed5 100755
+--- a/astromenace-1.4.0/src/menu/menu_workshop_shipyard.cpp
++++ b/astromenace-1.4.0/src/menu/menu_workshop_shipyard.cpp
+@@ -176,49 +176,49 @@ int GetWorkshopShipCost(int Num)
+ {
+ 	switch (Num) {
+ 	case 1:
+-		return 1100;
++		return 1;
+ 	case 2:
+-		return 900;
++		return 1;
+ 	case 3:
+-		return 1500;
++		return 1;
+ 	case 4:
+-		return 1300;
++		return 1;
+ 	case 5:
+-		return 1350;
++		return 1;
+ 	case 6:
+-		return 2400;
++		return 1;
+ 	case 7:
+-		return 3000;
++		return 1;
+ 	case 8:
+-		return 3500;
++		return 1;
+ 	case 9:
+-		return 4000;
++		return 1;
+ 	case 10:
+-		return 6000;
++		return 1;
+ 	case 11:
+-		return 4500;
++		return 1;
+ 	case 12:
+-		return 5000;
++		return 1;
+ 	case 13:
+-		return 9000;
++		return 1;
+ 	case 14:
+-		return 7500;
++		return 1;
+ 	case 15:
+-		return 7000;
++		return 1;
+ 	case 16:
+-		return 9000;
++		return 1;
+ 	case 17:
+-		return 10000;
++		return 1;
+ 	case 18:
+-		return 12000;
++		return 1;
+ 	case 19:
+-		return 5000;
++		return 1;
+ 	case 20:
+-		return 9000;
++		return 1;
+ 	case 21:
+-		return 10000;
++		return 1;
+ 	case 22:
+-		return 8000;
++		return 1;
+ 
+ 	default:
+ 		std::cerr << __func__ << "(): " << "wrong Num.\n";
+diff --git a/src/menu/menu_workshop_weaponry.cpp b/src/menu/menu_workshop_weaponry.cpp
+index 5fb60bd..ee4407e 100755
+--- a/astromenace-1.4.0/src/menu/menu_workshop_weaponry.cpp
++++ b/astromenace-1.4.0/src/menu/menu_workshop_weaponry.cpp
+@@ -135,50 +135,43 @@ int GetWeaponBaseCost(int Num)
+ {
+ 	switch (Num) {
+ 	case 1:
+-		return 150;
++		return 1;
+ 	case 2:
+-		return 300;
++		return 1;
+ 	case 3:
+-		return 1000;
++		return 1;
+ 	case 4:
+-		return 1500;
+-
++		return 1;
+ 	case 5:
+-		return 250;
++		return 1;
+ 	case 6:
+-		return 1000;
++		return 1;
+ 	case 7:
+-		return 1900;
+-
++		return 1;
+ 	case 8:
+-		return 1700;
++		return 1;
+ 	case 9:
+-		return 2500;
++		return 1;
+ 	case 10:
+-		return 4500;
+-
++		return 1;
+ 	case 11:
+-		return 2500;
++		return 1;
+ 	case 12:
+-		return 5000;
+-
++		return 1;
+ 	case 13:
+-		return 6000;
+-
++		return 1;
+ 	case 14:
+-		return 8000;
+-
++		return 1;
+ 	case 15:
+-		return 10000;
+-
++		return 1;
+ 	case 16:
+-		return 1500;
++		return 1;
+ 	case 17:
+-		return 4000;
++		return 1;
+ 	case 18:
+-		return 5000;
++		return 1;
+ 	case 19:
+-		return 8000;
++		return 1;
+ 
+ 	default:
+ 		return 0;
+diff --git a/src/menu/menu_workshop_workshop.cpp b/src/menu/menu_workshop_workshop.cpp
+index 301e120..2b22d5a 100755
+--- a/astromenace-1.4.0/src/menu/menu_workshop_workshop.cpp
++++ b/astromenace-1.4.0/src/menu/menu_workshop_workshop.cpp
+@@ -245,49 +245,45 @@ int GetSystemCost(int Num)
+ {
+ 	switch (Num) {
+ 	case 1:
+-		return 200;
++		return 1;
+ 	case 2:
+-		return 1500;
++		return 1;
+ 	case 3:
+-		return 3000;
++		return 1;
+ 	case 4:
+-		return 6000;
+-
++		return 1;
+ 	case 5:
+-		return 250;
++		return 1;
+ 	case 6:
+-		return 2000;
++		return 1;
+ 	case 7:
+-		return 7000;
++		return 1;
+ 	case 8:
+-		return 15000;
+-
++		return 1;
+ 	case 9:
+-		return 100;
++		return 1;
+ 	case 10:
+-		return 1000;
++		return 1;
+ 	case 11:
+-		return 3000;
++		return 1;
+ 	case 12:
+-		return 6000;
+-
++		return 1;
+ 	case 13:
+-		return 150;
++		return 1;
+ 	case 14:
+-		return 1000;
++		return 1;
+ 	case 15:
+-		return 3000;
++		return 1;
+ 	case 16:
+-		return 7000;
+-
++		return 1;
+ 	case 17:
+-		return 2500;
++		return 1;
+ 	case 18:
+-		return 6000;
++		return 1;
+ 	case 19:
+-		return 10000;
++		return 1;
+ 	case 20:
+-		return 15000;
++		return 1;
+ 
+ 	default:
+ 		std::cerr << __func__ << "(): " << "wrong Num.\n";
+diff --git a/src/object3d/space_ship/earth_space_fighter.cpp b/src/object3d/space_ship/earth_space_fighter.cpp
+index 7cf9ca9..3224cf9 100755
+--- a/astromenace-1.4.0/src/object3d/space_ship/earth_space_fighter.cpp
++++ b/astromenace-1.4.0/src/object3d/space_ship/earth_space_fighter.cpp
+@@ -997,11 +997,11 @@ cEarthSpaceFighter::cEarthSpaceFighter(const int SpaceShipNum)
+ 	switch (SpaceShipNum) {
+ 	case 1:
+ 		WeaponSlots.reserve(5);
+-		WeaponSlots.emplace_back(1, sVECTOR3D{4.4f, -0.1f, -6.0f});
+-		WeaponSlots.emplace_back(1, sVECTOR3D{-4.4f, -0.1f, -6.0f});
+-		WeaponSlots.emplace_back(1, sVECTOR3D{1.9f, -1.25f, 6.5f});
+-		WeaponSlots.emplace_back(1, sVECTOR3D{-1.9f, -1.25f, 6.5f});
+-		WeaponSlots.emplace_back(4, sVECTOR3D{0.0f, -1.20f, 1.0f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{4.4f, -0.1f, -6.0f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{-4.4f, -0.1f, -6.0f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{1.9f, -1.25f, 6.5f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{-1.9f, -1.25f, 6.5f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{0.0f, -1.20f, 1.0f});
+ 		EnginesLocation[0] = sVECTOR3D{3.0f, -1.2f, -4.7f};
+ 		EnginesLocation[1] = sVECTOR3D{-3.0f, -1.2f, -4.7f};
+ 		EnginesLeftLocation[0] = sVECTOR3D{1.0f, -0.7f, 3.7f};
+@@ -1010,10 +1010,10 @@ cEarthSpaceFighter::cEarthSpaceFighter(const int SpaceShipNum)
+ 
+ 	case 2:
+ 		WeaponSlots.reserve(4);
+-		WeaponSlots.emplace_back(1, sVECTOR3D{3.45f, 1.03f, -8.5f});
+-		WeaponSlots.emplace_back(1, sVECTOR3D{-3.45f, 1.03f, -8.5f});
+-		WeaponSlots.emplace_back(1, sVECTOR3D{1.7f, -1.03f, 3.9f});
+-		WeaponSlots.emplace_back(1, sVECTOR3D{-1.7f, -1.03f, 3.9f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{3.45f, 1.03f, -8.5f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{-3.45f, 1.03f, -8.5f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{1.7f, -1.03f, 3.9f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{-1.7f, -1.03f, 3.9f});
+ 		EnginesLocation[0] = sVECTOR3D{4.9f, -1.1f, -8.9f};
+ 		EnginesLocation[1] = sVECTOR3D{-4.9f, -1.1f, -8.9f};
+ 		EnginesLocation[2] = sVECTOR3D{0.75f, 0.7f, -9.6f};
+@@ -1025,8 +1025,8 @@ cEarthSpaceFighter::cEarthSpaceFighter(const int SpaceShipNum)
+ 	case 3:
+ 		WeaponSlots.reserve(3);
+ 		WeaponSlots.emplace_back(5, sVECTOR3D{0.0f, -1.75f, 3.5f});
+-		WeaponSlots.emplace_back(1, sVECTOR3D{7.15f, -0.38f, -4.4f});
+-		WeaponSlots.emplace_back(1, sVECTOR3D{-7.15f, -0.38f, -4.4f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{7.15f, -0.38f, -4.4f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{-7.15f, -0.38f, -4.4f});
+ 		EnginesLocation[0] = sVECTOR3D{4.4f, -3.0f, -9.7f};
+ 		EnginesLocation[1] = sVECTOR3D{-4.4f, -3.0f, -9.7f};
+ 		EnginesLocation[2] = sVECTOR3D{4.4f, 3.0f, -9.7f};
+@@ -1037,11 +1037,11 @@ cEarthSpaceFighter::cEarthSpaceFighter(const int SpaceShipNum)
+ 
+ 	case 4:
+ 		WeaponSlots.reserve(5);
+-		WeaponSlots.emplace_back(1, sVECTOR3D{4.10f, 1.4f, -2.5f});
+-		WeaponSlots.emplace_back(1, sVECTOR3D{-4.10f, 1.4f, -2.5f});
+-		WeaponSlots.emplace_back(1, sVECTOR3D{5.10f, -1.2f, -2.5f});
+-		WeaponSlots.emplace_back(1, sVECTOR3D{-5.10f, -1.2f, -2.5f});
+-		WeaponSlots.emplace_back(4, sVECTOR3D{0.0f, -1.5f, 5.3f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{4.10f, 1.4f, -2.5f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{-4.10f, 1.4f, -2.5f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{5.10f, -1.2f, -2.5f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{-5.10f, -1.2f, -2.5f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{0.0f, -1.5f, 5.3f});
+ 		EnginesLocation[0] = sVECTOR3D{0.8f, 0.1f, -9.6f};
+ 		EnginesLocation[1] = sVECTOR3D{-0.8f, 0.1f, -9.6f};
+ 		EnginesLeftLocation[0] = sVECTOR3D{1.6f, -0.9f, 5.7f};
+@@ -1050,8 +1050,8 @@ cEarthSpaceFighter::cEarthSpaceFighter(const int SpaceShipNum)
+ 
+ 	case 5:
+ 		WeaponSlots.reserve(2);
+-		WeaponSlots.emplace_back(2, sVECTOR3D{4.0f, -0.5f, 1.0f});
+-		WeaponSlots.emplace_back(2, sVECTOR3D{-4.0f, -0.5f, 1.0f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{4.0f, -0.5f, 1.0f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{-4.0f, -0.5f, 1.0f});
+ 		EnginesLocation[0] = sVECTOR3D{6.72f, -0.28f, -7.98f};
+ 		EnginesLocation[1] = sVECTOR3D{-6.72f, -0.28f, -7.98f};
+ 		EnginesLocation[2] = sVECTOR3D{6.72f, -1.96f, -7.28f};
+@@ -1062,11 +1062,11 @@ cEarthSpaceFighter::cEarthSpaceFighter(const int SpaceShipNum)
+ 
+ 	case 6:
+ 		WeaponSlots.reserve(5);
+-		WeaponSlots.emplace_back(2, sVECTOR3D{2.80f, 0.25f, -7.0f});
+-		WeaponSlots.emplace_back(2, sVECTOR3D{-2.80f, 0.25f, -7.0f});
+-		WeaponSlots.emplace_back(1, sVECTOR3D{5.20f, 0.6f, -6.0f});
+-		WeaponSlots.emplace_back(1, sVECTOR3D{-5.20f, 0.6f, -6.0f});
+-		WeaponSlots.emplace_back(4, sVECTOR3D{0.0f, -1.3f, 2.6f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{2.80f, 0.25f, -7.0f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{-2.80f, 0.25f, -7.0f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{5.20f, 0.6f, -6.0f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{-5.20f, 0.6f, -6.0f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{0.0f, -1.3f, 2.6f});
+ 		EnginesLocation[0] = sVECTOR3D{0.6f, 0.45f, -9.9f};
+ 		EnginesLocation[1] = sVECTOR3D{-0.6f, 0.45f, -9.9f};
+ 		EnginesLeftLocation[0] = sVECTOR3D{1.6f, -0.9f, 4.7f};
+@@ -1076,10 +1076,10 @@ cEarthSpaceFighter::cEarthSpaceFighter(const int SpaceShipNum)
+ 	case 7:
+ 		WeaponSlots.reserve(5);
+ 		WeaponSlots.emplace_back(5, sVECTOR3D{0.0f, -0.2f, 0.0f});
+-		WeaponSlots.emplace_back(1, sVECTOR3D{4.3f, -1.25f, -1.4f});
+-		WeaponSlots.emplace_back(1, sVECTOR3D{-4.3f, -1.25f, -1.4f});
+-		WeaponSlots.emplace_back(1, sVECTOR3D{8.2f, -0.75f, -3.6f});
+-		WeaponSlots.emplace_back(1, sVECTOR3D{-8.2f, -0.75f, -3.6f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{4.3f, -1.25f, -1.4f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{-4.3f, -1.25f, -1.4f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{8.2f, -0.75f, -3.6f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{-8.2f, -0.75f, -3.6f});
+ 		EnginesLocation[0] = sVECTOR3D{3.75f, -0.5f, -10.9f};
+ 		EnginesLocation[1] = sVECTOR3D{0.0f, 0.4f, -8.3f};
+ 		EnginesLocation[2] = sVECTOR3D{-3.75f, -0.5f, -10.9f};
+@@ -1089,8 +1089,8 @@ cEarthSpaceFighter::cEarthSpaceFighter(const int SpaceShipNum)
+ 
+ 	case 8:
+ 		WeaponSlots.reserve(2);
+-		WeaponSlots.emplace_back(1, sVECTOR3D{1.0f, -0.3f, 0.4f});
+-		WeaponSlots.emplace_back(1, sVECTOR3D{-1.0f, -0.3f, 0.4f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{1.0f, -0.3f, 0.4f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{-1.0f, -0.3f, 0.4f});
+ 		EnginesLocation[0] = sVECTOR3D{3.5f, 1.4f, -7.4f};
+ 		EnginesLocation[1] = sVECTOR3D{-3.5f, 1.4f, -7.4f};
+ 		EnginesLocation[2] = sVECTOR3D{3.65f, 0.5f, -7.9f};
+@@ -1101,8 +1101,8 @@ cEarthSpaceFighter::cEarthSpaceFighter(const int SpaceShipNum)
+ 
+ 	case 9:
+ 		WeaponSlots.reserve(2);
+-		WeaponSlots.emplace_back(2, sVECTOR3D{1.2f, 0.2f, 1.6f});
+-		WeaponSlots.emplace_back(2, sVECTOR3D{-1.2f, 0.2f, 1.6f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{1.2f, 0.2f, 1.6f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{-1.2f, 0.2f, 1.6f});
+ 		EnginesLocation[0] = sVECTOR3D{3.30f, -1.20f, -0.7f};
+ 		EnginesLocation[1] = sVECTOR3D{-3.30f, -1.20f, -0.7f};
+ 		EnginesLeftLocation[0] = sVECTOR3D{1.0f, 0.2f, 2.2f};
+@@ -1111,11 +1111,11 @@ cEarthSpaceFighter::cEarthSpaceFighter(const int SpaceShipNum)
+ 
+ 	case 10:
+ 		WeaponSlots.reserve(5);
+-		WeaponSlots.emplace_back(2, sVECTOR3D{5.05f, -1.8f, -1.7f});
+-		WeaponSlots.emplace_back(2, sVECTOR3D{-5.05f, -1.8f, -1.7f});
+-		WeaponSlots.emplace_back(2, sVECTOR3D{2.55f, -0.7f, -0.7f});
+-		WeaponSlots.emplace_back(2, sVECTOR3D{-2.55f, -0.7f, -0.7f});
+-		WeaponSlots.emplace_back(4, sVECTOR3D{0.0f, -0.9f, 6.1f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{5.05f, -1.8f, -1.7f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{-5.05f, -1.8f, -1.7f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{2.55f, -0.7f, -0.7f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{-2.55f, -0.7f, -0.7f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{0.0f, -0.9f, 6.1f});
+ 		EnginesLocation[0] = sVECTOR3D{0.8f, 0.55f, -9.9f};
+ 		EnginesLocation[1] = sVECTOR3D{-0.8f, 0.55f, -9.9f};
+ 		EnginesLeftLocation[0] = sVECTOR3D{1.6f, -0.4f, 5.3f};
+@@ -1124,9 +1124,9 @@ cEarthSpaceFighter::cEarthSpaceFighter(const int SpaceShipNum)
+ 
+ 	case 11:
+ 		WeaponSlots.reserve(3);
+-		WeaponSlots.emplace_back(2, sVECTOR3D{2.0f, -0.55f, -2.2f});
+-		WeaponSlots.emplace_back(2, sVECTOR3D{-2.0f, -0.55f, -2.2f});
+-		WeaponSlots.emplace_back(1, sVECTOR3D{0.0f, -0.7f, 2.2f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{2.0f, -0.55f, -2.2f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{-2.0f, -0.55f, -2.2f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{0.0f, -0.7f, 2.2f});
+ 		EnginesLocation[0] = sVECTOR3D{4.35f, -0.35f, -4.4f};
+ 		EnginesLocation[1] = sVECTOR3D{-4.35f, -0.35f, -4.4f};
+ 		EnginesLeftLocation[0] = sVECTOR3D{1.5f, -0.6f, 2.0f};
+@@ -1135,9 +1135,9 @@ cEarthSpaceFighter::cEarthSpaceFighter(const int SpaceShipNum)
+ 
+ 	case 12:
+ 		WeaponSlots.reserve(3);
+-		WeaponSlots.emplace_back(2, sVECTOR3D{2.25f, -0.85f, 3.3f});
+-		WeaponSlots.emplace_back(2, sVECTOR3D{-2.25f, -0.85f, 3.3f});
+-		WeaponSlots.emplace_back(4, sVECTOR3D{0.0f, -0.35f, 2.8f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{2.25f, -0.85f, 3.3f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{-2.25f, -0.85f, 3.3f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{0.0f, -0.35f, 2.8f});
+ 		EnginesLocation[0] = sVECTOR3D{4.8f, -1.2f, -2.8f};
+ 		EnginesLocation[1] = sVECTOR3D{-4.8f, -1.2f, -2.8f};
+ 		EnginesLeftLocation[0] = sVECTOR3D{1.2f, -0.2f, 6.3f};
+@@ -1147,10 +1147,10 @@ cEarthSpaceFighter::cEarthSpaceFighter(const int SpaceShipNum)
+ 	case 13:
+ 		WeaponSlots.reserve(5);
+ 		WeaponSlots.emplace_back(5, sVECTOR3D{0.0f, -2.15f, -4.4f});
+-		WeaponSlots.emplace_back(4, sVECTOR3D{7.2f, 1.85f, -5.6f});
+-		WeaponSlots.emplace_back(4, sVECTOR3D{-7.2f, 1.85f, -5.6f});
+-		WeaponSlots.emplace_back(1, sVECTOR3D{3.05f, -1.95f, -0.4f});
+-		WeaponSlots.emplace_back(1, sVECTOR3D{-3.05f, -1.95f, -0.4f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{7.2f, 1.85f, -5.6f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{-7.2f, 1.85f, -5.6f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{3.05f, -1.95f, -0.4f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{-3.05f, -1.95f, -0.4f});
+ 		EnginesLocation[0] = sVECTOR3D{2.2f, -1.35f, -9.8f};
+ 		EnginesLocation[1] = sVECTOR3D{-2.2f, -1.35f, -9.8f};
+ 		EnginesLocation[2] = sVECTOR3D{1.1f, -1.0f, -9.8f};
+@@ -1161,11 +1161,11 @@ cEarthSpaceFighter::cEarthSpaceFighter(const int SpaceShipNum)
+ 
+ 	case 14:
+ 		WeaponSlots.reserve(5);
+-		WeaponSlots.emplace_back(2, sVECTOR3D{1.70f, -1.1f, 5.5f});
+-		WeaponSlots.emplace_back(2, sVECTOR3D{-1.70f, -1.1f, 5.5f});
+-		WeaponSlots.emplace_back(2, sVECTOR3D{4.1f, 0.2f, -6.3f});
+-		WeaponSlots.emplace_back(2, sVECTOR3D{-4.1f, 0.2f, -6.3f});
+-		WeaponSlots.emplace_back(4, sVECTOR3D{0.0f, -0.9f, 3.3f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{1.70f, -1.1f, 5.5f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{-1.70f, -1.1f, 5.5f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{4.1f, 0.2f, -6.3f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{-4.1f, 0.2f, -6.3f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{0.0f, -0.9f, 3.3f});
+ 		EnginesLocation[0] = sVECTOR3D{0.85f, 0.1f, -8.1f};
+ 		EnginesLocation[1] = sVECTOR3D{-0.85f, 0.1f, -8.1f};
+ 		EnginesLeftLocation[0] = sVECTOR3D{1.3f, -0.7f, 6.3f};
+@@ -1174,9 +1174,9 @@ cEarthSpaceFighter::cEarthSpaceFighter(const int SpaceShipNum)
+ 
+ 	case 15:
+ 		WeaponSlots.reserve(3);
+-		WeaponSlots.emplace_back(4, sVECTOR3D{0.0f, -0.7f, 1.3f});
+-		WeaponSlots.emplace_back(3, sVECTOR3D{7.1f, -0.2f, -5.8f});
+-		WeaponSlots.emplace_back(3, sVECTOR3D{-7.1f, -0.2f, -5.8f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{0.0f, -0.7f, 1.3f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{7.1f, -0.2f, -5.8f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{-7.1f, -0.2f, -5.8f});
+ 		EnginesLocation[0] = sVECTOR3D{4.75f, -0.5f, -7.2f};
+ 		EnginesLocation[1] = sVECTOR3D{-4.75f, -0.5f, -7.2f};
+ 		EnginesLeftLocation[0] = sVECTOR3D{1.0f, -0.6f, 6.25f};
+@@ -1185,9 +1185,9 @@ cEarthSpaceFighter::cEarthSpaceFighter(const int SpaceShipNum)
+ 
+ 	case 16:
+ 		WeaponSlots.reserve(3);
+-		WeaponSlots.emplace_back(3, sVECTOR3D{0.0f, -1.2f, 7.7f});
+-		WeaponSlots.emplace_back(4, sVECTOR3D{2.0f, -1.05f, 0.4f});
+-		WeaponSlots.emplace_back(4, sVECTOR3D{-2.0f, -1.05f, 0.4f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{0.0f, -1.2f, 7.7f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{2.0f, -1.05f, 0.4f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{-2.0f, -1.05f, 0.4f});
+ 		EnginesLocation[0] = sVECTOR3D{3.8f, -0.75f, -11.4f};
+ 		EnginesLocation[1] = sVECTOR3D{-3.8f, -0.75f, -11.4f};
+ 		EnginesLocation[2] = sVECTOR3D{3.5f, 0.85f, -10.85f};
+@@ -1198,11 +1198,11 @@ cEarthSpaceFighter::cEarthSpaceFighter(const int SpaceShipNum)
+ 
+ 	case 17:
+ 		WeaponSlots.reserve(5);
+-		WeaponSlots.emplace_back(3, sVECTOR3D{3.10f, 0.2f, -4.6f});
+-		WeaponSlots.emplace_back(3, sVECTOR3D{-3.10f, 0.2f, -4.6f});
+-		WeaponSlots.emplace_back(2, sVECTOR3D{5.85f, -0.5f, -5.6f});
+-		WeaponSlots.emplace_back(2, sVECTOR3D{-5.85f, -0.5f, -5.6f});
+-		WeaponSlots.emplace_back(4, sVECTOR3D{0.0f, -0.5f, -0.5f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{3.10f, 0.2f, -4.6f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{-3.10f, 0.2f, -4.6f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{5.85f, -0.5f, -5.6f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{-5.85f, -0.5f, -5.6f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{0.0f, -0.5f, -0.5f});
+ 		EnginesLocation[0] = sVECTOR3D{0.65f, 0.2f, -8.2f};
+ 		EnginesLocation[1] = sVECTOR3D{-0.65f, 0.2f, -8.2f};
+ 		EnginesLeftLocation[0] = sVECTOR3D{1.4f, -0.5f, 6.25f};
+@@ -1213,8 +1213,8 @@ cEarthSpaceFighter::cEarthSpaceFighter(const int SpaceShipNum)
+ 		WeaponSlots.reserve(4);
+ 		WeaponSlots.emplace_back(5, sVECTOR3D{1.7f, -2.5f, -4.4f});
+ 		WeaponSlots.emplace_back(5, sVECTOR3D{-1.7f, -2.5f, -4.4f});
+-		WeaponSlots.emplace_back(3, sVECTOR3D{5.1f, -1.0f, -5.4f});
+-		WeaponSlots.emplace_back(3, sVECTOR3D{-5.1f, -1.0f, -5.4f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{5.1f, -1.0f, -5.4f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{-5.1f, -1.0f, -5.4f});
+ 		EnginesLocation[0] = sVECTOR3D{7.5f, 0.15f, -9.1f};
+ 		EnginesLocation[1] = sVECTOR3D{-7.5f, 0.15f, -9.1f};
+ 		EnginesLocation[2] = sVECTOR3D{7.7f, -1.15f, -9.6f};
+@@ -1225,9 +1225,9 @@ cEarthSpaceFighter::cEarthSpaceFighter(const int SpaceShipNum)
+ 
+ 	case 19:
+ 		WeaponSlots.reserve(3);
+-		WeaponSlots.emplace_back(2, sVECTOR3D{0.0f, -0.75f, 0.0f});
+-		WeaponSlots.emplace_back(2, sVECTOR3D{4.7f, -0.4f, -5.0f});
+-		WeaponSlots.emplace_back(2, sVECTOR3D{-4.7f, -0.4f, -5.0f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{0.0f, -0.75f, 0.0f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{4.7f, -0.4f, -5.0f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{-4.7f, -0.4f, -5.0f});
+ 		EnginesLocation[0] = sVECTOR3D{6.3f, 0.60f, -8.1f};
+ 		EnginesLocation[1] = sVECTOR3D{-6.3f, 0.60f, -8.1f};
+ 		EnginesLocation[2] = sVECTOR3D{6.7f, -0.60f, -8.8f};
+@@ -1238,10 +1238,10 @@ cEarthSpaceFighter::cEarthSpaceFighter(const int SpaceShipNum)
+ 
+ 	case 20:
+ 		WeaponSlots.reserve(4);
+-		WeaponSlots.emplace_back(3, sVECTOR3D{0.80f, -0.8f, -2.3f});
+-		WeaponSlots.emplace_back(3, sVECTOR3D{-0.80f, -0.8f, -2.3f});
+-		WeaponSlots.emplace_back(4, sVECTOR3D{3.9f, -1.25f, -3.2f});
+-		WeaponSlots.emplace_back(4, sVECTOR3D{-3.9f, -1.25f, -3.2f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{0.80f, -0.8f, -2.3f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{-0.80f, -0.8f, -2.3f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{3.9f, -1.25f, -3.2f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{-3.9f, -1.25f, -3.2f});
+ 		EnginesLocation[0] = sVECTOR3D{3.45f, -0.3f, -7.3f};
+ 		EnginesLocation[1] = sVECTOR3D{-3.45f, -0.3f, -7.3f};
+ 		EnginesLocation[2] = sVECTOR3D{4.55f, -0.5f, -7.0f};
+@@ -1252,9 +1252,9 @@ cEarthSpaceFighter::cEarthSpaceFighter(const int SpaceShipNum)
+ 
+ 	case 21:
+ 		WeaponSlots.reserve(3);
+-		WeaponSlots.emplace_back(2, sVECTOR3D{2.05f, -0.22f, -1.2f});
+-		WeaponSlots.emplace_back(2, sVECTOR3D{-2.05f, -0.22f, -1.2f});
+-		WeaponSlots.emplace_back(2, sVECTOR3D{0.0f, -0.5f, 0.5f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{2.05f, -0.22f, -1.2f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{-2.05f, -0.22f, -1.2f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{0.0f, -0.5f, 0.5f});
+ 		EnginesLocation[0] = sVECTOR3D{0.7f, 0.0f, -4.4f};
+ 		EnginesLocation[1] = sVECTOR3D{-0.7f, 0.0f, -4.4f};
+ 		EnginesLeftLocation[0] = sVECTOR3D{1.0f, -0.4f, 3.0f};
+@@ -1262,7 +1262,7 @@ cEarthSpaceFighter::cEarthSpaceFighter(const int SpaceShipNum)
+ 		break;
+ 
+ 	case 22:
+-		WeaponSlots.emplace_back(3, sVECTOR3D{0.0f, 0.05f, 3.6f});
++		WeaponSlots.emplace_back(5, sVECTOR3D{0.0f, 0.05f, 3.6f});
+ 		EnginesLocation[0] = sVECTOR3D{0.0f, 0.3f, -5.2f};
+ 		EnginesLeftLocation[0] = sVECTOR3D{1.9f, -0.3f, 2.6f};
+ 		EnginesRightLocation[0] = sVECTOR3D{-1.9f, -0.3f, 2.6f};
